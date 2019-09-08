@@ -21,7 +21,7 @@ public class ItemService {
         }
         int id = new Random().nextInt(100);
         item.setId(id);
-        System.out.println();
+       
         return item;
     }
 }
