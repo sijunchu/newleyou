@@ -29,6 +29,9 @@ ly:
   cors:
     allowedOrigins:
       - http://manage.leyou.com
+      - http://www.leyou.com
+      - http://image.leyou.com
+
     allowedCredentials: true
     allowedHeaders:
       - "*"
