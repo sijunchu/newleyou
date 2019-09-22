@@ -17,4 +17,5 @@ public abstract class RegexPatterns {
      */
     public static final String USERNAME_REGEX = "^\\w{4,32}$";
 
+    public static String CoDE_REGEX = "[a-zA-z\\d]{1,6}";
 }

@@ -15,6 +15,8 @@ public class RegexUtils {
      */
     public static boolean isPhone(String phone){
         return matches(phone, RegexPatterns.PHONE_REGEX);
+    } public static boolean isValidCode(String code){
+        return matches(code, RegexPatterns.CoDE_REGEX);
     }
     /**
      * 是否符合邮箱格式
