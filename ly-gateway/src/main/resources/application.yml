@@ -26,6 +26,7 @@ zuul:
     upload-service : /upload/**
     search-service: /search/**
     user-service: /user/**
+    auth-service: /auth/**
 ly:
   cors:
     allowedOrigins:
