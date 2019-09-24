@@ -21,12 +21,14 @@ ribbon:
 zuul:
   prefix: /api
   routes:
-
     item-service: /item/** # 将商品微服务映射到/item/**
     upload-service : /upload/**
     search-service: /search/**
     user-service: /user/**
     auth-service: /auth/**
+  ignored-services:
+    - ly-registry
+  sensitive-headers:
 ly:
   cors:
     allowedOrigins:
@@ -46,3 +48,20 @@ ly:
       - HEAD
     maxAge: 360000
     filterPath: "/**"
+  jwt:
+    pubKeyPath: E:\devTool\nginx-1.12.2\ssh\id_rsa.pub
+    user:
+      expire: 30 # 过期时间,单位分钟
+      cookieName: LY_TOKEN # cookie名称
+      cookieDomain: leyou.com # cookie的域
+      tokenRefreshThresold: 10
+    filter:
+      allowPaths:
+        - "*:/api/auth/login"
+        - "*:/api/auth/verify"
+        - "*:/api/search/page"
+        - "*:/api/search/filter"
+        - "*:/api/user/register"
+        - "*:/api/user/code"
+        - "*:/api/user/check"
+        - "Get:/api/item"
