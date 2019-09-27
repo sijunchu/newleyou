@@ -27,6 +27,10 @@ zuul:
     user-service: /user/**
     auth-service: /auth/**
     cart-service: /cart/**
+    order-service:
+      path: /order/**
+      serviceId: order-service
+      strip-prefix: false
   ignored-services:
     - ly-registry
   sensitive-headers:
