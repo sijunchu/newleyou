@@ -26,6 +26,7 @@ zuul:
     search-service: /search/**
     user-service: /user/**
     auth-service: /auth/**
+    cart-service: /cart/**
   ignored-services:
     - ly-registry
   sensitive-headers:
@@ -61,4 +62,4 @@ ly:
       - "*:/api/user/register"
       - "*:/api/user/code"
       - "*:/api/user/check"
-      - "Get:/api/item"
+      - "GET:/api/item"
