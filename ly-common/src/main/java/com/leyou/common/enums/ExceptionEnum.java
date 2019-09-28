@@ -39,7 +39,8 @@ public enum ExceptionEnum {
 
     UNAUTHORIZED(401, "登录失效或未登录！"),
     FORBIDDEN(403, "没有权限，禁止访问！"),
-    ;
+    STOCK_NOT_ENOUGH(500, "库存不足");
+
     // 枚举项必须位于枚举类的第一行，其它代码必须从第二行开始
     private int status;
     private String message;
