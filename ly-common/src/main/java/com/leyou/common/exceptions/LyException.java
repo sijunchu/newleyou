@@ -29,4 +29,5 @@ public class LyException extends RuntimeException {
         super(message, cause);
         this.status = status;
     }
+
 }

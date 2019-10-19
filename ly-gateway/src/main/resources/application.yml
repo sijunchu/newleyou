@@ -66,4 +66,5 @@ ly:
       - "*:/api/user/register"
       - "*:/api/user/code"
       - "*:/api/user/check"
+      - "*:/api/pay"
       - "GET:/api/item"
